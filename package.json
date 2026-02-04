@@ -1,34 +1,31 @@
 {
-  "name": "tinky",
+  "name": "tinky-test",
   "version": "0.1.0",
-  "description": "React for CLIs, re-imagined with the Taffy engine",
+  "description": "Testing utilities for Tinky UI",
   "keywords": [
-    "react",
-    "ink",
-    "taffy",
     "cli",
+    "react",
     "terminal",
-    "layout-engine",
-    "flexbox",
-    "grid",
-    "renderer"
+    "test-utils",
+    "testing",
+    "tinky"
   ],
-  "homepage": "https://github.com/ByteLandTechnology/tinky#readme",
+  "homepage": "https://github.com/ByteLandTechnology/tinky-test#readme",
   "bugs": {
-    "url": "https://github.com/ByteLandTechnology/tinky/issues"
+    "url": "https://github.com/ByteLandTechnology/tinky-test/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ByteLandTechnology/tinky.git"
+    "url": "git+https://github.com/ByteLandTechnology/tinky-test.git"
   },
   "license": "MIT",
   "author": {
-    "name": "ByteLandTechnology"
+    "name": "ByteLand Technology Limited"
   },
   "type": "module",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "tsc",
+    "test": "bun test",
     "build": "tsc && npm run docs",
     "lint": "eslint src",
     "prepublish": "npm run build",
@@ -40,6 +37,9 @@
     "./lib/*"
   ],
   "typings": "./lib/index.d.ts",
+  "dependencies": {
+    "tinky": ">=1.3.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^20.3.0",
     "@commitlint/config-conventional": "^20.3.0",
@@ -49,6 +49,8 @@
     "@semantic-release/github": "^12.0.2",
     "@semantic-release/npm": "^13.1.3",
     "@semantic-release/release-notes-generator": "^14.1.0",
+    "@types/bun": "^1.3.8",
+    "bun": "^1.3.8",
     "conventional-changelog-conventionalcommits": "^9.1.0",
     "eslint": "^9.39.2",
     "eslint-plugin-react": "^7.37.5",
