@@ -259,3 +259,26 @@ Allows the process to exit even if the stream is active.
 #### Implementation of
 
 `ReadStream.unref`
+
+---
+
+### write()
+
+> **write**(`data`): `boolean`
+
+Writes data to the stream, simulating user input.
+This emits a 'data' event with the provided data.
+
+#### Parameters
+
+##### data
+
+The data to write to the stream.
+
+`string` | `Buffer`\<`ArrayBufferLike`\>
+
+#### Returns
+
+`boolean`
+
+true if the data was written successfully.

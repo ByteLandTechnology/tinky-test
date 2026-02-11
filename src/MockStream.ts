@@ -1,5 +1,4 @@
-import type { ReadStream, WriteStream } from "tinky";
-import { EventEmitter } from "tinky/lib/utils/event-emitter.js";
+import { EventEmitter, type ReadStream, type WriteStream } from "tinky";
 
 export class MockWriteStream extends EventEmitter implements WriteStream {
   columns = 80;
@@ -13,6 +12,18 @@ export class MockWriteStream extends EventEmitter implements WriteStream {
 
 export class MockReadStream extends EventEmitter implements ReadStream {
   isTTY = true;
+
+  /**
+   * Writes data to the stream, simulating user input.
+   * This emits a 'data' event with the provided data.
+   *
+   * @param data - The data to write to the stream.
+   * @returns true if the data was written successfully.
+   */
+  write(data: string | Buffer): boolean {
+    this.emit("data", data);
+    return true;
+  }
 
   setRawMode(): this {
     return this;

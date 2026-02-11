@@ -6,7 +6,7 @@
 
 # Function: render()
 
-> **render**(`node`, `options`): [`RenderResult`](../interfaces/RenderResult.md)
+> **render**(`node`, `options?`): [`RenderResult`](../interfaces/RenderResult.md)
 
 Renders a React component using Tinky directly to mock streams, capturing output for assertions.
 
@@ -18,7 +18,7 @@ Renders a React component using Tinky directly to mock streams, capturing output
 
 The React component to render.
 
-### options
+### options?
 
 [`TestRenderOptions`](../type-aliases/TestRenderOptions.md) = `{}`
 
