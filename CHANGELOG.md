@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/ByteLandTechnology/tinky-test/compare/v1.0.0...v1.1.0) (2026-02-11)
+
+### ✨ Features
+
+- implement mock user input and update dependencies ([96e264f](https://github.com/ByteLandTechnology/tinky-test/commit/96e264f89a11d67531d9325d7a10a04dd3d575fa))
+
 ## 1.0.0 (2026-02-04)
 
 ### ✨ Features
